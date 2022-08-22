@@ -17,5 +17,5 @@ form.addEventListener("submit", async (e) => {
    fetch("https://api.ashapuraee.com/contact", {
       method: "POST",
       body: JSON.stringify(body)
-   }).then(data => data.json()).then(data => alert(data)).catch(error => alert("Message Not Sent!"));
+   }).then(data => data.json()).then(data => console.log(data)).catch(error => alert("Message Not Sent!"));
 });
