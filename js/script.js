@@ -7,15 +7,17 @@ form.addEventListener("submit", async (e) => {
    let number = document.getElementById("number").value;
    let message = document.getElementById("message").value;
    form.reset();
-   let body = {
-      "name": `${name}`,
-      "email": `${email}`,
-      "contact": `${number}`,
-      "message": `${message}`,
-      "secret": "kjyhdwejqgrfgewiurfgui"
-   };
    fetch("https://api.ashapuraee.com/contact", {
       method: "POST",
-      body: JSON.stringify(body)
-   }).then(data => data.json()).then(data => console.log(data)).catch(error => alert("Message Not Sent!"));
+      body: JSON.stringify({
+         "name": `${name}`,
+         "email": `${email}`,
+         "contact": `${number}`,
+         "message": `${message}`,
+         "secret": "kjyhdwejqgrfgewiurfgui"
+      }),
+      headers: {
+         "Content-Type": "application/json"
+      }
+   }).then(data => data.json()).then(data => alert(data.message));
 });
