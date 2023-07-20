@@ -23,10 +23,7 @@
       <div class="container-fluid">
         <nav class="navbar navbar-expand-lg custom_nav-container ">
           <a class="navbar-brand" href="index.html">
-            <img src="images/logo.png" alt="">
-            <span>
-              Ashapuraee
-            </span>
+            <img src="images/logo.png" alt="ashapuraee logo">
           </a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -200,9 +197,9 @@
                 <img src="images/linkedin.png" alt="">
               </a>
             </div>
-            <div>
-              <a href="">
-                <img src="images/instagram.png" alt="">
+            <div class="ml-5">
+              <a data-toggle="modal" data-target="#upi" href="#">
+                <img src="images/upi.png" alt="upi">
               </a>
             </div>
           </div>
@@ -222,6 +219,28 @@
       </div>
     </div>
   </footer>
+  <div class="modal fade" id="upi" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Pay With UPI</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body text-center">
+          <img src="images/qrupi.jpeg" alt="" width="150">
+          <p>919769559860.A@mahb</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+          <a href="upi://pay?appid=bom_admin&tr=&mc=7399&pa=919769559860.A@mahb&pn=ASHAPURA%20ELECTRICALS%20AND%20ENGINEERS&tn=&am=&cu=&bn=ASHAPURA%20ELECTRICALS%20AND%20ENGINEERS"
+            type="button" class="btn blue">Open App</a>
+        </div>
+      </div>
+    </div>
+  </div>
   <script src="js/jquery-3.4.1.min.js"></script>
   <script src="js/bootstrap.js"></script>
   <script src="js/script.js"></script>
