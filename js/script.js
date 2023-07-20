@@ -7,7 +7,7 @@ form.addEventListener("submit", async (e) => {
    let number = document.getElementById("number").value;
    let message = document.getElementById("message").value;
    form.reset();
-   fetch("https://api.ashapuraee.com/contact", {
+   fetch("https://api.ashapuraee.com/", {
       method: "POST",
       body: JSON.stringify({
          "name": `${name}`,

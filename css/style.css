@@ -434,15 +434,8 @@ a:focus {
 
 .about_section .detail-box a {
   display: inline-block;
-  padding: 10px 35px;
-  background-color: #4b208c;
   color: #ffffff;
   border-radius: 5px;
-  margin: 25px 0 45px 0;
-}
-
-.about_section .detail-box a:hover {
-  background-color: #5625a1;
 }
 
 .blog_section .heading_container {
